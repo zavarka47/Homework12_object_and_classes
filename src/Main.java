@@ -17,11 +17,17 @@ public class Main {
         System.out.println("b00002 = " + b00002);
         System.out.println(b00002.equals(b00003));
         System.out.println(b00004.equals(b00001));
-
         System.out.println("b00002.hashCode() = " + b00002.hashCode());
         System.out.println("b00003.hashCode() = " + b00003.hashCode());
 
         System.out.println(b00002.hashCode() == b00003.hashCode());
+        System.out.println();
+        System.out.println("a00001.hashCode() = " + a00001.hashCode());
+        System.out.println("a00002.hashCode() = " + a00002.hashCode());
+        System.out.println(a00001.equals(a00002));
+        System.out.println(a00001.hashCode() == a00002.hashCode());
+
+
 
 
     }
