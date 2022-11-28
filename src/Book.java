@@ -2,7 +2,7 @@ public class Book {
     private String bookTitle;
     private Author authorName;
     private int release;
-    private Book Book;
+
 
     public Book (String bookTitle, Author authorName, int release) {
         this.bookTitle = bookTitle;
@@ -28,11 +28,19 @@ public class Book {
         this.release = release;
     }
 
-    public void dataBook(Book book) {
+    public String toString () {
+        return "book title: " + bookTitle + "; author: " + authorName + "; release: " + release + ";";
+    }
 
-        Author author = this.authorName;
-        System.out.println("book title: " + book.bookTitle + "; author: " + author.dataAuthor(author) +  "; release: " + book.release + ";" );
+    public boolean equals (Object other) {
+        Book book = (Book) other;
+        return this.authorName.equals(((Book) other).authorName);
 
     }
+
+    public int hashCode () {
+        return authorName.hashCode();
+    }
+
 
 }
